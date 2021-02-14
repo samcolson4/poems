@@ -3,16 +3,12 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
-      <Link to="/">
-      <button variant="outlined">
+      <Link to="/" className="navbar_link">
         HOME      
-      </button>
       </Link>
-      
-      <Link to="/about">
-      <button variant="outlined">
+      {' '}|{' '}
+      <Link to="/about" className="navbar_link">
         ABOUT      
-      </button>
       </Link>
 
     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/home.js';
 import About from './pages/about.js'
+import NotFoundRoute from './NotFoundRoute.js'
 
 
 const Main = () => {
@@ -9,6 +10,7 @@ const Main = () => {
     <Switch>
       <Route exact path='/' component={Home}></Route>
       <Route exact path='/about' component={About}></Route>
+      <Route path="*" component={NotFoundRoute} />
     </Switch>
   );
 }
