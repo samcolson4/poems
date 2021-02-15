@@ -4,7 +4,9 @@ import './navbar.css'
 const NavBar = () => {
   return (
     <div className="navbar">
-      <h1 className="site_header">Poems. </h1>
+      <Link to="/">
+        <h1 className="site_header">Poems. </h1>
+      </Link>
       {' '}
       <Link to="/" className="navbar_link">
         HOME      
