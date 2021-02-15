@@ -17,13 +17,15 @@ getWord() {
     }
   }
 
-    request(options, function (error, response, body) {
-      if (error) throw new Error(error);
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
 
-      // console.log(body);
-      var json = JSON.parse(body)
-      console.log(json.word)
-    });
+    // console.log(body);
+    // console.log(response)
+    var json = JSON.parse(body)
+    console.log(json.word)
+  })
+
   }
 
   sortwords(response) {
@@ -32,7 +34,6 @@ getWord() {
   }
 
   addWord(newWord) {
-    this.words = []
     this.words.push(newWord)
   }
 
