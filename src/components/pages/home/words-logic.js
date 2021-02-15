@@ -20,7 +20,9 @@ getWord() {
     request(options, function (error, response, body) {
       if (error) throw new Error(error);
 
-      console.log(body);
+      // console.log(body);
+      var json = JSON.parse(body)
+      console.log(json.word)
     });
   }
 
@@ -30,6 +32,7 @@ getWord() {
   }
 
   addWord(newWord) {
+    this.words = []
     this.words.push(newWord)
   }
 
