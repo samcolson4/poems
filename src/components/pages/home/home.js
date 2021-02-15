@@ -1,12 +1,13 @@
 import WordsLogic from './words-logic.js'
-{/* {process.env.REACT_APP_WORDS_API_KEY} */}
 
 var words = new WordsLogic()
+words.getWord()
 
 const Home = () => {
   return (
     <div>
-      { words.words[0] }
+      { words.words } {' '}
+      { words.words.length }
     </div>
   );
 }
