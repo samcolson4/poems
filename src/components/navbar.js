@@ -4,12 +4,13 @@ import './navbar.css'
 const NavBar = () => {
   return (
     <div className="navbar">
-      <h1>Poems.</h1>
+      <h1 className="site_header">Poems. </h1>
+      {' '}
       <Link to="/" className="navbar_link">
         HOME      
       </Link>
       {' '}|{' '}
-      <Link to="/about" className="navbar_link">
+      <Link to="/about" className="navbar_link" id="about">
         ABOUT      
       </Link>
     <hr></hr>

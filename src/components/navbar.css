@@ -14,3 +14,11 @@ a:visited {
 a:hover {
   color: red;
 }
+
+.site_header {
+  display: inline;
+}
+
+#about:hover {
+  color:rgb(11, 179, 11);
+}
