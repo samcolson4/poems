@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div>      
-      <p>This is the about page</p>
+      <h2>This is a project inspired by the layout of some poems in 'Just Us' by Claudia Rankine.</h2>
     </div>
   );
 }
