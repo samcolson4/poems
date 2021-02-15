@@ -1,3 +1,6 @@
+# Poems
+[![Build Status](https://travis-ci.com/samcolson4/poems.svg?branch=main)](https://travis-ci.com/samcolson4/poems)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
