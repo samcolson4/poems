@@ -31,9 +31,7 @@ class WordsLogic {
         
         var data = JSON.parse(value.body)
         this.words.push(data.word)
-        
-        // console.log(this.words)
-    })
+      })
   }
 
   getLotsOfWords(num) {
