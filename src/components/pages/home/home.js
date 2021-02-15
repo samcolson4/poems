@@ -5,9 +5,9 @@ var words = new WordsLogic
 
 class Home extends Component {
   
-    state = {
-      showWords: true
-    }
+  state = {
+    showWords: true
+  }
 
   updateWords = () => {
     this.setState({
