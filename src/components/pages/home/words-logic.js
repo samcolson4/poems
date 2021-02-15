@@ -1,7 +1,7 @@
 class WordsLogic {
   
   constructor() {
-    this.words = ["hello"]
+    this.words = ["test_hello"]
   }
   
   getWords() {
@@ -9,6 +9,7 @@ class WordsLogic {
   }
 
   sortwords(response) {
+    this.words = []
     const results = []
   }
 
