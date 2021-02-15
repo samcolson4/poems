@@ -1,5 +1,5 @@
 # Poems
-![https://travis-ci.com/samcolson4/poems.svg?branch=main]
+[![Build Status](https://travis-ci.com/samcolson4/poems.svg?branch=main)](https://travis-ci.com/samcolson4/poems)
 
 # Getting Started with Create React App
 
