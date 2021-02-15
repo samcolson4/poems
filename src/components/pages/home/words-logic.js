@@ -1,3 +1,5 @@
+import config from './config.js'
+
 class WordsLogic {
   
   constructor() {
@@ -5,7 +7,6 @@ class WordsLogic {
   }
   
   getWords() {
-
   }
 
   sortwords(response) {
