@@ -4,10 +4,11 @@ var words = new WordsLogic()
 words.getWord()
 
 const Home = () => {
+  
   return (
     <div>
-      { words.words } {' '}
-      { words.words.length }
+      <button onClick={words.getWord.bind(words) }> Get word </button>
+      { words.words }
     </div>
   );
 }
