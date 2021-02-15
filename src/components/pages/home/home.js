@@ -11,7 +11,7 @@ class Home extends Component {
 
   updateWords = () => {
     this.setState({
-      wordList: words.getWord(), 
+      wordList: words.getLotsOfWords(10)
     });
   }
 

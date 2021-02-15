@@ -25,13 +25,23 @@ class WordsLogic {
       })
       }).then( value => {
 
+        if (this.words == ["test_hello"]) {
+          this.words.length = 0
+        } 
+        
         var data = JSON.parse(value.body)
-
         this.words.push(data.word)
-        console.log(this.words)
+        
+        // console.log(this.words)
     })
   }
 
+  getLotsOfWords(num) {
+    for (var i = 1; i <= num; ++i) {
+      this.getWord()
+    }
+    console.log(this.words)
+  }
  
 
 }
