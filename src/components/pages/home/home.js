@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div>
       { words.words[0] }
+      {/* {process.env.REACT_APP_WORDS_API_KEY} */}
     </div>
   );
 }
