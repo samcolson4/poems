@@ -6,7 +6,6 @@ var words = new WordsLogic
 class Home extends Component {
   
     state = {
-      wordList: [],
       showWords: true
     }
 
