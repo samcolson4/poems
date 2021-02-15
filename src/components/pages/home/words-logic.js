@@ -29,14 +29,10 @@ class WordsLogic {
 
         this.words.push(data.word)
         console.log(this.words)
-        // return this.words
-        // this.addWord(data.word)
     })
   }
 
-  addWord(newWord) {
-    this.words.push(newWord)
-  }
+ 
 
 }
 

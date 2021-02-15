@@ -9,9 +9,9 @@ class Home extends Component {
       showWords: true
     }
 
-  updateWords = (event) => {
+  updateWords = () => {
     this.setState({
-      wordList: words.getWord()
+      wordList: words.getWord(), 
     });
   }
 
