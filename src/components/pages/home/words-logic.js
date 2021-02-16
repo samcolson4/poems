@@ -2,6 +2,7 @@ class WordsLogic {
   
   constructor() {
     this.words = []
+    this.outputWords = []
   }
   
   getWord() {
@@ -33,11 +34,18 @@ class WordsLogic {
    for (var i = 0; i < num; i++) {
       this.getWord()
     }
-    console.log(this.words)
-    this.getWord()
+    this.ouputPoem()
+  }
+
+  ouputPoem() {
+    var length = this.words.length
+    
+    for (var i = 0; i < length; i++) {
+      this.outputWords.push(`<p> ${this.words[i]} </p>`)
+      console.log(this.outputWords)
+    }
   }
  
-
 }
 
 export default WordsLogic;
