@@ -1,21 +1,25 @@
 var data = require('./dictionary.json')
 
-
 var keys = [];
 for(var k in data) keys.push(k)
-console.log(keys)
+
+var randomWords = []
+
+function getRandomWords(num) {
+  for (var i = 0; i < num; i++) {
+    var item = keys[Math.floor(Math.random() * keys.length)];
+    randomWords.push(item)
+  }
+}
+
+getRandomWords(40)
 
 class WordsLogic {
   
   constructor() {
-    this.words = ["This is a test"]
-    this.outputWords = []
+    this.words = randomWords
   }
-  
-  printThree() {
-    return keys[2]
-  }
- 
+
 }
 
 export default WordsLogic;

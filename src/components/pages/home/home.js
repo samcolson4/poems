@@ -20,7 +20,6 @@ class Home extends Component {
     return (
       <div>
         { wordList }
-        { words.printThree() }
       </div>
     );
   }
