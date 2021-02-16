@@ -16,9 +16,9 @@ class Home extends Component {
   }
 
   makeLines(arr) {
-    var random = getRandomInt(arr.length - (arr.length / 2))
+    var random = getRandomInt(arr.length)
     for (var i = 0; i < random; i++) {
-      var line = arr[Math.floor(Math.random() * arr.length)] + ' '
+      var line = arr[Math.floor(Math.random() * arr.length)] + " "
       this.lines.push(line)
     }
     console.log(this.lines)

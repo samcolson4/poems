@@ -6,6 +6,7 @@ for(var k in data) keys.push(k)
 var randomWords = []
 
 function getRandomWords(num) {
+  randomWords = []
   for (var i = 0; i < num; i++) {
     var item = keys[Math.floor(Math.random() * keys.length)];
     randomWords.push(item)
