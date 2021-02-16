@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 var words = new WordsLogic()
 
 class Home extends Component {
-
+  
   state = {
     showWords: true
   }
@@ -20,6 +20,7 @@ class Home extends Component {
     return (
       <div>
         { wordList }
+        { words.printThree() }
       </div>
     );
   }
