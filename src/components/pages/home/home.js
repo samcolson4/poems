@@ -6,12 +6,14 @@ var words = new WordsLogic
 class Home extends Component {
   
   state = {
-    showWords: true
+    showWords: false
   }
 
   updateWords = () => {
     this.setState({
-      wordList: words.getLotsOfWords(10)
+      wordList: words.getLotsOfWords(10),
+      showWords: true,
+      wordList: words.getLotsOfWords(1)
     });
   }
 

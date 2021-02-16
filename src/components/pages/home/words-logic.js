@@ -1,7 +1,7 @@
 class WordsLogic {
   
   constructor() {
-    this.words = ["test_hello"]
+    this.words = []
   }
   
   getWord() {
@@ -23,22 +23,18 @@ class WordsLogic {
       
       resolve(response, body);
       })
-      }).then( value => {
-
-        if (this.words == ["test_hello"]) {
-          this.words.length = 0
-        } 
-        
+      }).then( value => {        
         var data = JSON.parse(value.body)
         this.words.push(data.word)
       })
   }
 
   getLotsOfWords(num) {
-    for (var i = 1; i <= num; ++i) {
+   for (var i = 0; i < num; i++) {
       this.getWord()
     }
     console.log(this.words)
+    this.getWord()
   }
  
 
