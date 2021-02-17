@@ -10,7 +10,7 @@ function getRandomWords(num) {
   var isOverTen = false
   while(isOverTen === false){
     for (var i = 0; i < num; i++) {
-      var item = keys[Math.floor(Math.random() * keys.length)]
+      var item = `${keys[Math.floor(Math.random() * keys.length)]}`
       randomWords.push(item)
       keys.splice(item, 1)
     }
@@ -40,7 +40,6 @@ class WordsLogic {
   getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
-  
 
 }
 

@@ -20,8 +20,8 @@ class Home extends Component {
 
     return (
       <div>
-        { wordList }
-        { words.lines[0] }
+        <div>{ wordList }</div>
+        <p>{ words.lines[0] }</p>
       </div>
     );
   }
