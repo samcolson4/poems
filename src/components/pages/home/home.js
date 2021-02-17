@@ -13,17 +13,11 @@ class Home extends Component {
 
   render() {
 
-    if (this.state.showWords) {
-      var wordList = (
-        <div>{ words.lines }</div>
-      )
-    }
-
     var title = words.lines[words.getRandomInt(4)].props.children[1].split(" ")[0]
 
     return (
       <div className="poem_body">
-        <h2 id="title">{title}</h2>
+        <p id="title">{title}</p>
 
         <div>{ words.lines[0] }</div>
         <div>{ words.lines[1] }</div>

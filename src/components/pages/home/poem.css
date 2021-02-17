@@ -17,8 +17,16 @@
 
 .line4 {
   color: red;
+  /* text-shadow: 2px 5px red; */
 }
 
 .line5 {
   padding-top: 6em;
+}
+
+#title {
+  text-align: center !important;
+  /* text-decoration: underline; */
+  font-size: larger;
+  font-weight: 800;
 }
