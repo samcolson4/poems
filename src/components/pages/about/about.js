@@ -8,7 +8,7 @@ const About = () => {
 
       <br></br><br></br>
       <div id="links">
-        <a className="inline_link" href="https://github.com/samcolson4/react-catan">GitHub repo</a> | <a className="inline_link" href="http://www.colsondesign.com">Project Portfolio</a> | <a className="inline_link" href="https://www.linkedin.com/samcolson">LinkedIn</a>
+        <a className="inline_link" href="https://github.com/samcolson4/poems">GitHub repo</a> | <a className="inline_link" href="http://www.colsondesign.com">Project Portfolio</a> | <a className="inline_link" href="https://www.linkedin.com/samcolson">LinkedIn</a>
       </div>
     </div>
   );
