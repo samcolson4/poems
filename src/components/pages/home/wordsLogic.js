@@ -26,7 +26,21 @@ class WordsLogic {
   
   constructor() {
     this.words = randomWords
+    this.lines = []
   }
+
+  makeLines(arr) {
+    var random = this.getRandomInt(arr.length)
+    for (var i = 0; i < random; i++) {
+      var line = arr[Math.floor(Math.random() * arr.length)] + " "
+      this.lines.push(line)
+    }
+  }
+
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+  
 
 }
 
