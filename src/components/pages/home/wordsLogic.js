@@ -33,7 +33,7 @@ class WordsLogic {
     var random = this.getRandomInt(arr.length)
     for (var i = 0; i < random; i++) {
 
-      let line = <p className={`line`+this.getRandomInt(6)}> {this.getSlices(arr)} </p>
+      let line = <p key={this.getSlices(arr)} className={`line`+this.getRandomInt(6)}> {this.getSlices(arr)} </p>
       
       this.lines.push(line)
     }
