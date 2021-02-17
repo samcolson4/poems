@@ -20,8 +20,7 @@ class Home extends Component {
     }
 
     return (
-      <div>
-        {/* <div>{ wordList }</div> */}
+      <div className="poem_body">
         <div>{ words.lines[0] }</div>
         <div>{ words.lines[1] }</div>
         <div>{ words.lines[2] }</div>
@@ -29,6 +28,7 @@ class Home extends Component {
         <div>{ words.lines[4] }</div>
         <div>{ words.lines[5] }</div>
         <div>{ words.lines[6] }</div>
+        <div>{ words.lines[7] }</div>
       </div>
     );
   }
