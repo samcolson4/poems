@@ -43,7 +43,7 @@ class WordsLogic {
 
   getSlices(arr) {
     var random = this.getRandomInt(arr.length / 7)
-    let slice = arr.splice(0, random)
+    let slice = arr.splice(0, random).join(" ")
     return slice
   }
 

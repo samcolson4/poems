@@ -23,6 +23,7 @@ class Home extends Component {
         {/* <div>{ wordList }</div> */}
         <div>{ words.lines[0] }</div>
         <div>{ words.lines[1] }</div>
+        <div>{ words.lines[2] }</div>
       </div>
     );
   }
