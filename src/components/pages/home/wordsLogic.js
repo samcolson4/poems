@@ -10,7 +10,7 @@ function getRandomWords(num) {
   var isOverTen = false
   while(isOverTen === false){
     for (var i = 0; i < num; i++) {
-      var item = `${keys[Math.floor(Math.random() * keys.length)]}`
+      let item = keys[Math.floor(Math.random() * keys.length)]
       randomWords.push(item)
       keys.splice(item, 1)
     }
@@ -32,7 +32,7 @@ class WordsLogic {
   makeLines(arr) {
     var random = this.getRandomInt(arr.length)
     for (var i = 0; i < random; i++) {
-      var line = arr[Math.floor(Math.random() * arr.length)] + " "
+      let line = <p className={this.getRandomInt(5)}> {arr[Math.floor(Math.random() * arr.length)]} </p>
       this.lines.push(line)
     }
   }
