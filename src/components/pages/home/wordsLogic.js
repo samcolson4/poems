@@ -7,13 +7,20 @@ var randomWords = []
 
 function getRandomWords(num) {
   randomWords = []
-  for (var i = 0; i < num; i++) {
-    var item = keys[Math.floor(Math.random() * keys.length)];
-    randomWords.push(item)
+  var isOverTen = false
+  while(isOverTen === false){
+    for (var i = 0; i < num; i++) {
+      var item = keys[Math.floor(Math.random() * keys.length)]
+      randomWords.push(item)
+      keys.splice(item, 1)
+    }
+    if(randomWords.length > 10){
+      isOverTen = true
+    }
   }
 }
 
-getRandomWords(40)
+getRandomWords(50)
 
 class WordsLogic {
   
