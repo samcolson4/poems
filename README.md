@@ -3,6 +3,8 @@
 
 ![poems screenshot](https://i.imgur.com/LhbNoqq.png)
 
+##[Deployed here](http://just-poems.surge.sh)
+
 ## About
 This website is designed to mirror the structure of the poems in ['Just Us'](https://www.penguin.co.uk/books/319/319488/just-us/9780241467107.html) by Claudia Rankine. 
 
