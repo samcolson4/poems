@@ -1,0 +1,19 @@
+.line1 {
+  text-align: left;
+}
+
+.line2 {
+  text-align: right;
+}
+
+.line3 {
+  text-align: center;
+}
+
+.line4 {
+  color: red;
+}
+
+.line5 {
+  padding-top: 10em;
+}

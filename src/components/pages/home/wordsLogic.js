@@ -35,7 +35,7 @@ class WordsLogic {
 
       // let line = <p className={this.getRandomInt(5)}> {arr[Math.floor(Math.random() * arr.length)]} </p>
 
-      let line = <p className={this.getRandomInt(5)}> {this.getSlices(arr)} </p>
+      let line = <p className={`line`+this.getRandomInt(6)}> {this.getSlices(arr)} </p>
       
       this.lines.push(line)
     }
